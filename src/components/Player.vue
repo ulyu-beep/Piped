@@ -82,7 +82,7 @@ export default {
             .then(hotkeys => {
                 this.hotkeys = hotkeys;
                 var self = this;
-                hotkeys("f,m,j,k,l,space,up,down,left,right", function(e, handler) {
+                hotkeys("f,m,j,k,l,space,up,down,left,right", function (e, handler) {
                     const videoEl = self.$refs.videoEl;
                     switch (handler.key) {
                         case "f":
@@ -146,7 +146,7 @@ export default {
                 var tx = window.db.transaction("watch_history", "readonly");
                 var store = tx.objectStore("watch_history");
                 var request = store.get(this.videoId);
-                request.onsuccess = function(event) {
+                request.onsuccess = function (event) {
                     var video = event.target.result;
                     if (video && video.currentTime) {
                         videoEl.currentTime = video.currentTime;
@@ -364,7 +364,7 @@ export default {
             var tx = window.db.transaction("watch_history", "readwrite");
             var store = tx.objectStore("watch_history");
             var request = store.get(this.videoId);
-            request.onsuccess = function(event) {
+            request.onsuccess = function (event) {
                 var video = event.target.result;
                 if (video) {
                     video.currentTime = time;

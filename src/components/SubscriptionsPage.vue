@@ -2,7 +2,7 @@
     <h1 class="uk-text-bold uk-text-center">{{ $t("titles.subscriptions") }}</h1>
 
     <div style="text-align: center">
-        <button v-if="authenticated" class="uk-button uk-button-small" style=" margin-right: 0.5rem" type="button">
+        <button v-if="authenticated" class="uk-button uk-button-small" style="margin-right: 0.5rem" type="button">
             <router-link to="/import">
                 {{ $t("actions.import_from_json") }}
             </router-link>

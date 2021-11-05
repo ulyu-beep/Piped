@@ -8,7 +8,7 @@
                 <b>Selected Subscriptions: {{ selectedSubscriptions }}</b>
             </div>
             <div class="uk-form-row">
-                <b>Override: <input v-model="override" class="uk-checkbox" type="checkbox"/></b>
+                <b>Override: <input v-model="override" class="uk-checkbox" type="checkbox" /></b>
             </div>
             <div class="uk-form-row">
                 <a class="uk-width-1-1 uk-button uk-button-large uk-width-auto" @click="handleImport">Import</a>
